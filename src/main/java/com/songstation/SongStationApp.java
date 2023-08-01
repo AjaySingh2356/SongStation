@@ -1,4 +1,4 @@
-package com.example.songstation;
+package com.songstation;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
