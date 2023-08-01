@@ -41,8 +41,7 @@ public class SongStationController {
         loadSongsFromJSON();
         songListView.setItems(songs);
         songListView.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> showSongDetails(newValue)
-        );
+                (observable, oldValue, newValue) -> showSongDetails(newValue));
     }
 
     private void createJsonFileIfNotExists() {
