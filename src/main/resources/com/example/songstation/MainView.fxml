@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="SongStationController">
+    <top>
+        <HBox spacing="10" alignment="CENTER" padding="10">
+            <Label text="Station Title:" />
+            <TextField fx:id="stationTitleField" />
+            <Label text="Song Title:" />
+            <TextField fx:id="songTitleField" />
+            <Button text="Add" onAction="#onAddButtonClicked" />
+        </HBox>
+    </top>
+    <center>
+        <ListView fx:id="songListView" prefHeight="200" />
+    </center>
+    <bottom>
+        <TextArea fx:id="songDetailArea" editable="false" wrapText="true" prefHeight="100" />
+    </bottom>
+</BorderPane>
